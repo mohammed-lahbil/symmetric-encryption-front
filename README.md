@@ -1,8 +1,21 @@
-# Jasypt Encryption/Decryption Frontend  
+# Symmetric Encryption/Decryption Frontend  
   
 This is an Angular application that provides a simple user interface for encrypting and decrypting text using the Jasypt Encryption/Decryption API.  
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
+
+
+## Table of Contents
+
+- [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+- [Usage](#usage)
+    - [Running the application](#running-the-application)
+      - [Steps](#steps)
+    - [Build](#build)
+    - [Running unit tests](#running-unit-tests)
+    - [Running lint verification](#running-lint-verification)
 
 
 # Getting started
