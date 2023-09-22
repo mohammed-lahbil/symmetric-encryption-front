@@ -12,11 +12,11 @@ export class EncryptionService {
 
   constructor(private httpClient: HttpClient) { }
 
-  encryptValue(decryptedObject: DecryptedObject): Observable<any>{
-    return this.httpClient.post(this.baseUrl + '/encrypt', decryptedObject).pipe();
+  encryptValue(decryptedObject: DecryptedObject): Observable<EncryptedObject>{
+    return this.httpClient.post<EncryptedObject>(this.baseUrl + '/encrypt', decryptedObject).pipe();
   }
 
-  decryptValue(encryptedObject: EncryptedObject): Observable<any>{
-    return this.httpClient.post(this.baseUrl + '/decrypt', encryptedObject).pipe();
+  decryptValue(encryptedObject: EncryptedObject): Observable<DecryptedObject>{
+    return this.httpClient.post<DecryptedObject>(this.baseUrl + '/decrypt', encryptedObject).pipe();
   }
 }

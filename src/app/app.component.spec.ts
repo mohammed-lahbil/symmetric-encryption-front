@@ -10,8 +10,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon';
 import {MatTooltipModule} from '@angular/material/tooltip';
-import { MatSnackBarModule } from '@angular/material/snack-bar';
-import {ClipboardModule} from '@angular/cdk/clipboard';
+import { EncryptedObject } from './models/EncryptedObject';
+import { DecryptedObject } from './models/DecryptedObject';
 
 describe('AppComponent', () => {
   let component: AppComponent;
@@ -31,8 +31,7 @@ describe('AppComponent', () => {
         MatInputModule,
         MatSelectModule,
         MatIconModule,
-        MatTooltipModule,
-        ClipboardModule
+        MatTooltipModule
       ]
     });
 
@@ -52,8 +51,9 @@ describe('AppComponent', () => {
       algorithmValue: 'AES'
     };
     const encryptedText = 'Encrypted text';
-
-    encryptionService.encryptValue.and.returnValue(of({ encryptedText }));
+    const encryptedObject = new EncryptedObject;
+    encryptedObject.encryptedText = encryptedText;
+    encryptionService.encryptValue.and.returnValue(of(encryptedObject));
 
     component.encrypt(event);
 
@@ -77,7 +77,9 @@ describe('AppComponent', () => {
     };
 
     const decryptedText = 'decrypted text';
-    encryptionService.decryptValue.and.returnValue(of({ decryptedText }));
+    const decryptedObject = new DecryptedObject;
+    decryptedObject.decryptedText = decryptedText;
+    encryptionService.decryptValue.and.returnValue(of(decryptedObject));
 
     component.decrypt(event);
 

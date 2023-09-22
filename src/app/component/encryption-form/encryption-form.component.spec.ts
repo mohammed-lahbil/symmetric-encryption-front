@@ -10,8 +10,6 @@ import { MatSelectModule } from '@angular/material/select';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { MatSnackBarModule } from '@angular/material/snack-bar';
-import { ClipboardModule } from '@angular/cdk/clipboard';
 
 describe('EncryptionFormComponent', () => {
   let component: EncryptionFormComponent;
@@ -31,7 +29,6 @@ describe('EncryptionFormComponent', () => {
         MatSelectModule,
         MatIconModule,
         MatTooltipModule,
-        ClipboardModule,
         FormsModule,
         ReactiveFormsModule,
       ],

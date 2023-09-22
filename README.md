@@ -1,14 +1,41 @@
-# SymmetricEncryptionFront
+# Jasypt Encryption/Decryption Frontend  
+  
+This is an Angular application that provides a simple user interface for encrypting and decrypting text using the Jasypt Encryption/Decryption API.  
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# Getting started
 
-## Code scaffolding
+## Prerequisites  
+  
+- Node.js (version 12 or higher)  
+- Angular CLI  
+  
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Clone the repository: `git clone https://github.com/mohammed-lahbil/symmetric-encryption-front.git`
+2. Navigate to the project directory:  `cd symmetric-encryption-front`
+3. Install required dependencies: `npm install`
+
+
+# Usage
+  
+## Running the application  
+  
+Start the development server: `ng serve`
+By default, the application will run on port 4200. You can access the frontend at `http://localhost:4200/`.  
+  
+### Steps  
+  
+1. Enter the text value you want to encrypt or decrypt.  
+2. Enter the passphrase for symmetric encryption/decryption.  
+3. Select the algorithm to use for encryption/decryption.  
+4. Click the "Encrypt" or "Decrypt" button to perform the respective operation.  
+  
+The encrypted or decrypted value will be displayed on the page.  
+
+__NB:__ The `symmetric-encryption-back` application must be running in order to get encrypted or decrypted values.
 
 ## Build
 
@@ -16,12 +43,9 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test` or `npm run test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test --code-coverage` or `npm run coverage` to execute the unit tests and get the code coverage of the project.
 
-## Running end-to-end tests
+## Running lint verification
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Run `ng lint` or `npm run lint` to execute lint verification.
