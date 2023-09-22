@@ -16,7 +16,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     - [Build](#build)
     - [Running unit tests](#running-unit-tests)
     - [Running lint verification](#running-lint-verification)
-
+- [Screenshots of the project](#screenshots-of-the-project)
 
 # Getting started
 
@@ -27,16 +27,32 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/mohammed-lahbil/symmetric-encryption-front.git`
-2. Navigate to the project directory:  `cd symmetric-encryption-front`
-3. Install required dependencies: `npm install`
+1. Clone the repository: 
+```sh
+git clone https://github.com/mohammed-lahbil/symmetric-encryption-front.git
+```
+2. Navigate to the project directory:
+```sh
+cd symmetric-encryption-front
+```
+3. Install required dependencies:
+```sh
+npm install
+```
 
 
 # Usage
   
 ## Running the application  
   
-Start the development server: `ng serve`
+Start the development server:
+```sh
+ng serve
+```
+or
+```sh
+npm run start
+```
 By default, the application will run on port 4200. You can access the frontend at `http://localhost:4200/`.  
   
 ### Steps  
@@ -52,13 +68,49 @@ __NB:__ The `symmetric-encryption-back` application must be running in order to 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build` or `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```sh
+ng build
+```
+or
+```sh
+npm run build
+```
 
 ## Running unit tests
 
 Run `ng test` or `npm run test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```sh
+ng test
+```
+or
+```sh
+npm run test
+```
 Run `ng test --code-coverage` or `npm run coverage` to execute the unit tests and get the code coverage of the project.
+```sh
+ng test --code-coverage
+```
+or
+```sh
+npm run coverage
+```
 
 ## Running lint verification
 
 Run `ng lint` or `npm run lint` to execute lint verification.
+```sh
+ng lint
+```
+or
+```sh
+npm run lint
+```
+
+# Screenshots of the project
+
+## Encryption
+![Example image](./src/assets/readme/encrypt.png)
+
+## Decryption
+![Example image](./src/assets/readme/decrypt.png)
