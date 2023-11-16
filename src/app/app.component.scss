@@ -9,6 +9,8 @@
     .form{
       box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
       margin: 50px;
+      display: flex;
+      flex-direction: row !important;
       h2{
         margin-top: 25px;
         text-align: center;
